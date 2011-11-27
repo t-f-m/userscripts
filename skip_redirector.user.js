@@ -13,7 +13,6 @@ new function() {
 	const EXPIRES = 7;
 
 	var greasemonkey = (typeof unsafeWindow != 'undefined');
-	var isOpera = (typeof window.opera != 'undefined');
 	var now = +new Date;
 
     localSITEINFO=[
@@ -32,8 +31,6 @@ new function() {
 	handler(localSITEINFO);
 	if (greasemonkey)
 		GM_registerMenuCommand('Skip Redirector Clear SITEINFO Cache', save);
-	if (isOpera)
-		localStorage = window.opera.scriptStorage;
 
 	var timer, complete = false;
 	var stash = load();
