@@ -6,6 +6,10 @@
 // @license       MIT License
 // @work          Greasemonkey
 // @work          GreaseKit
+// @grant         GM_getValue
+// @grant         GM_setValue
+// @grant         GM_xmlhttpRequest
+// @grant         GM_registerMenuCommand
 // ==/UserScript==
 
 new function() {
